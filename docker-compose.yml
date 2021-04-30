@@ -1,0 +1,8 @@
+version: '3'
+
+services: 
+    web:
+        build: .
+## Port for mapping, here I am mapping port 8080 to 80 of nginx container
+        ports: 
+            - 8080:80
